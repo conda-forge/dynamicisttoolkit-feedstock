@@ -3,9 +3,9 @@ About dynamicisttoolkit
 
 Home: http://github.com/moorepants/dynamicisttoolkit
 
-Package license: UNLICENSE
+Package license: Unlicense
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Various tools for theoretical and experimental dynamics.
 
