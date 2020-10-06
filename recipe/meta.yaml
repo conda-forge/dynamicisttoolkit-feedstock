@@ -37,7 +37,7 @@ test:
 
 about:
   home: http://github.com/moorepants/dynamicisttoolkit
-  license: UNLICENSE
+  license: Unlicense
   license_file: UNLICENSE.txt
   summary: 'Various tools for theoretical and experimental dynamics.'
   doc_url: http://dynamicisttoolkit.readthedocs.io/
