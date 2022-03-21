@@ -13,16 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     - matplotlib-base
