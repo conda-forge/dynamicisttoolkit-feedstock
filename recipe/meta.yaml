@@ -1,6 +1,6 @@
 {% set name = "DynamicistToolKit" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "fc5e3601d8f780566d09c2c4e3febd3fda2624c2a0a42921b6e0167fde16bdbd" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "4759667054aec4795a33d10fe2e5c831ab0b284684613cf35250cbb66610ad18" %}
 
 package:
   name: {{ name|lower }}
@@ -13,19 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 4
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
   run:
-    - python >=3.6
-    - numpy
-    - scipy
-    - matplotlib-base
+    - matplotlib-base >=3.5.1
+    - numpy >=1.21.5
+    - python >=3.8
+    - scipy >=1.8.0
 
 test:
   imports:
