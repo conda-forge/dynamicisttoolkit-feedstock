@@ -1,4 +1,4 @@
-{% set name = "DynamicistToolKit" %}
+{% set name = "dynamicisttoolkit" %}
 {% set version = "0.6.0" %}
 {% set sha256 = "4759667054aec4795a33d10fe2e5c831ab0b284684613cf35250cbb66610ad18" %}
 
