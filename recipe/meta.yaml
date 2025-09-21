@@ -1,6 +1,6 @@
 {% set name = "dynamicisttoolkit" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "5a64af2e2e7e514e1383f54ed0695325f1d8520c9cc8d0fda1dacd170aacf901" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "963aea9972ba19c55e5a6b51ce165adea2620f7ce2815ccc880b6c9687f37c15" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
 
 requirements:
   host:
