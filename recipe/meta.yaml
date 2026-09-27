@@ -1,6 +1,6 @@
 {% set name = "dynamicisttoolkit" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "963aea9972ba19c55e5a6b51ce165adea2620f7ce2815ccc880b6c9687f37c15" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "a832ce7a5928a014fcca1c2a3126128eaaafca696f8efd2b3fa1e2a2eef72941" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,12 +20,12 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=68.1.2
   run:
-    - matplotlib-base >=3.5.1
-    - numpy >=1.21.5
+    - matplotlib-base >=3.6.3
+    - numpy >=1.26.4
     - python >={{ python_min }}
-    - scipy >=1.8.0
+    - scipy >=1.11.4
 
 test:
   requires:
