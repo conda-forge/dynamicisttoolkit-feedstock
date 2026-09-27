@@ -20,12 +20,12 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=68.1.2
   run:
-    - matplotlib-base >=3.5.1
-    - numpy >=1.21.5
+    - matplotlib-base >=3.6.3
+    - numpy >=1.26.4
     - python >={{ python_min }}
-    - scipy >=1.8.0
+    - scipy >=1.11.4
 
 test:
   requires:
